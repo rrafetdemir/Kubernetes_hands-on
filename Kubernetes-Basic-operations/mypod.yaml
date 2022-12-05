@@ -1,0 +1,12 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: rrafet-pod
+  labels:
+    app: nginx
+spec:
+  containers:
+  - name: rrafet-nginx
+    image: nginx
+    ports:
+    - containerPort: 80
